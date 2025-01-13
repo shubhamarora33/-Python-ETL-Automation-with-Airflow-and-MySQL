@@ -1,0 +1,56 @@
+CREATE DATABASE IF NOT EXISTS etl_project;
+
+USE etl_project;
+
+CREATE TABLE IF NOT EXISTS employee_data (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255),
+    age INT,
+    city VARCHAR(255),
+    job_id INT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+INSERT INTO employee_data (name, age, city, job_id) VALUES 
+('Alice', 30, 'New York', 101),
+('Bob', 25, 'Los Angeles', 102),
+('Charlie', 35, 'Chicago', 103),
+('David', 28, 'Houston', 104),
+('Eva', 22, 'Phoenix', 105),
+('Frank', 33, 'Philadelphia', 106),
+('Grace', 27, 'San Antonio', 107),
+('Hannah', 24, 'San Diego', 108),
+('Isaac', 32, 'Dallas', 109),
+('Jack', 29, 'San Jose', 110),
+('Katie', 31, 'Austin', 111),
+('Liam', 26, 'Jacksonville', 112),
+('Mia', 23, 'Fort Worth', 113),
+('Nathan', 34, 'Columbus', 114),
+('Olivia', 21, 'Charlotte', 115),
+('Paul', 36, 'San Francisco', 116),
+('Quinn', 20, 'Indianapolis', 117),
+('Rachel', 38, 'Seattle', 118),
+('Sam', 19, 'Denver', 119),
+('Tina', 37, 'Washington', 120),
+('Uma', 30, 'Boston', 121),
+('Victor', 28, 'El Paso', 122),
+('Wendy', 26, 'Nashville', 123),
+('Xander', 24, 'Detroit', 124),
+('Yara', 22, 'Oklahoma City', 125),
+('Zach', 29, 'Portland', 126),
+('Anna', 33, 'Las Vegas', 127),
+('Brian', 35, 'Memphis', 128),
+('Cara', 27, 'Louisville', 129),
+('Derek', 23, 'Baltimore', 130),
+('Ella', 25, 'Milwaukee', 131),
+('Finn', 31, 'Albuquerque', 132),
+('Gina', 30, 'Tucson', 133),
+('Henry', 32, 'Fresno', 134),
+('Ivy', 28, 'Sacramento', 135),
+('Jake', 34, 'Kansas City', 136),
+('Laura', 29, 'Long Beach', 137),
+('Mason', 36, 'Mesa', 138),
+('Nina', 21, 'Atlanta', 139),
+('Owen', 26, 'Omaha', 140);
+
+
